@@ -397,6 +397,15 @@ strong {
   transform: scaleX(1);
 }
 
+/* ---- External nav link (Members) ---------------------- */
+.nav-link-external {
+  opacity: 0.75;
+}
+
+.nav-link-external:hover {
+  opacity: 1;
+}
+
 /* ---- Nav: unscrolled state (white text on dark hero) --- */
 .site-nav:not(.scrolled) .nav-logo-name {
   color: var(--col-white);
