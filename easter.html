@@ -9,6 +9,8 @@
   <meta property="og:description" content="Easter events for the whole community in Coopers Edge: Palm Sunday parade, Easter Egg Hunt, Good Friday interactive experience, and Easter Sunday celebration.">
   <meta property="og:image" content="images/easter-banner.png">
   <meta property="og:type" content="website">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'none'; base-uri 'self'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -465,8 +467,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

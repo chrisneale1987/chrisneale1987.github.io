@@ -104,9 +104,10 @@
       });
     });
 
-    // Deep-link support via hash
+    // Deep-link support via hash (whitelist prevents malformed input crashing querySelector)
+    const VALID_TABS = new Set(['vision', 'history', 'whos-who']);
     const hash = window.location.hash.slice(1);
-    if (hash) {
+    if (hash && VALID_TABS.has(hash)) {
       const targetBtn = document.querySelector(`[data-tab="${hash}"]`);
       if (targetBtn) targetBtn.click();
     }
@@ -124,5 +125,9 @@
       }
     });
   });
+
+  /* ---- Footer year -------------------------------------- */
+  const yearEl = document.getElementById('footer-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 })();

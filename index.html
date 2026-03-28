@@ -8,6 +8,8 @@
   <meta property="og:title" content="Coopers Edge Community Church">
   <meta property="og:description" content="A place where people of all ages can belong, grow and flourish. Join us every Sunday at 4pm.">
   <meta property="og:type" content="website">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'none'; base-uri 'self'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -181,9 +183,7 @@
     <section aria-label="Easter 2026" style="padding-block: var(--space-xl); background: var(--col-bg);">
       <div class="container">
         <a href="easter.html" style="display:block; text-decoration:none;">
-          <div class="reveal" style="position:relative; border-radius: var(--radius-lg); overflow:hidden; box-shadow: var(--shadow-md); transition: box-shadow var(--dur-med) var(--ease), transform var(--dur-med) var(--ease);"
-            onmouseover="this.style.boxShadow='0 8px 32px rgba(0,0,0,0.15)'; this.style.transform='translateY(-2px)'"
-            onmouseout="this.style.boxShadow=''; this.style.transform=''">
+          <div class="reveal hover-lift" style="position:relative; border-radius: var(--radius-lg); overflow:hidden; box-shadow: var(--shadow-md); transition: box-shadow var(--dur-med) var(--ease), transform var(--dur-med) var(--ease);">
             <img
               src="images/easter-banner.png"
               alt="Easter at Coopers Edge Community Church 2026 — Palm Sunday 29 March, Easter Egg Hunt 1 April, Good Friday 3 April, Easter Sunday 5 April"
@@ -359,7 +359,7 @@
               title="Map showing @TheEdge Community Centre, Typhoon Way, Brockworth, Gloucester GL3 4DY"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2471.7!2d-2.1650!3d51.8420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487108b0c57d8c41%3A0x2aa6a7c6a7c6a7c6!2sTyphoon%20Way%2C%20Brockworth%2C%20Gloucester%20GL3%204DY!5e0!3m2!1sen!2suk!4v1680000000000!5m2!1sen!2suk"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerpolicy="strict-origin-when-cross-origin"
               aria-label="Google Map of @TheEdge Community Centre"
             ></iframe>
           </div>
@@ -427,8 +427,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
